@@ -21,7 +21,7 @@ open class CardReader(activity: Activity) {
 
     private var TAG = this.javaClass.simpleName
     protected var mDefaultAdapter: NfcAdapter? = null
-    protected var mActivity: Activity? = null
+    protected var mActivity: Activity? = activity
     private var mIsoDep: IsoDep? = null
 
     // internal 修饰类的方法，表示这个类方法只适合当前module使用，

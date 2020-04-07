@@ -35,7 +35,7 @@ class DefaultCardRecord {
         price = Integer.parseInt(record.substring(10, 18), 16).toLong()
         typeCode = record.substring(18, 20)
         if ("09" == typeCode){
-            typeName == "消费"
+            typeName = "消费"
         }else{
             typeName = "充值"
         }
